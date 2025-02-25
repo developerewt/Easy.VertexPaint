@@ -62,11 +62,11 @@ def clear_vertices(*args):
 def select_color(color, *args):
     global selected_color
     selected_color = color
-    pm.inViewMessage(amg=f"<hl>Cor selecionada:</hl> {color}", pos='topCenter', fade=True)
+    pm.inViewMessage(amg=f"<hl>Selected color:</hl> {color}", pos='topCenter', fade=True)
 
 # Create UI
 def create_ui():
-    window_name = "vertexPaintTool"
+    window_name = "Easy.VertexPaint"
 
     if pm.window(window_name, exists=True):
         pm.deleteUI(window_name, window=True)
